@@ -1,4 +1,4 @@
-# Ass5
+# Angular 2 based Shopping Cart Application
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
