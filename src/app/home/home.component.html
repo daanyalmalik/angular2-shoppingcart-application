@@ -1,0 +1,66 @@
+<p>
+  <!--{{app2home.name}}-->
+</p>
+
+
+<!--//use ng-model for two way data binding---use to upate quantity
+//Use custom property bind to pass data from one component to another-->
+<label> Name: </label>
+<input type="text" [(ngModel)]="toInsert.name"  class="text form-control " />
+<label> Price: </label>
+<input [(ngModel)]="toInsert.price"  class="text form-control " />
+<label> Quantity: </label>
+<input [(ngModel)]="toInsert.quantity"   class="text form-control "/>
+ <button (click)="insertNew(toInsert)" class="btn btn-primary"> Add Item </button>
+ 
+
+<p>{{toInsert.name}}</p>
+<p>{{toInsert.price}}</p>
+<p>{{toInsert.quantity}}</p>
+
+
+
+<h2>List of all Products</h2>
+<!-- 'items' is a variable here, let is a keyword, item is one individual item-->
+<ul class="items-ul">
+  <li *ngFor="let item of items" class="items-li">
+    <h3> {{item.name}}</h3> <p> Price: {{item.price}} $ </p>  <p> Quantity: {{item.quantity}} </p>
+     <button (click)="AddtoCart([item.name],[item.price],[item.quantity])" class="btn btn-success"> Add to cart </button>
+  </li>
+
+</ul> 
+
+<label>Staff Name:</label>
+<input type="text" [(ngModel)]="staffname"  class="text form-control " />
+
+<label>Discount(%)</label>
+<input type="text" [(ngModel)]="discount"  class="text form-control " />
+<button (click)="makeBill()" class="btn btn-danger"> Make Bill</button>
+<h2>My Cart</h2>
+<!-- 'items' is a variable here, let is a keyword, item is one individual item-->
+<h4>Date: {{datetoday | date: 'dd/MM/yyyy'}}</h4>
+<h4> {{recptdisp}}</h4>
+<h4>{{staffname2}}</h4>
+
+ &nbsp; &nbsp;<label>Product</label>  <div class="single-ninja2"><label>Price($)</label> &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label>Quantity</label></div>
+<ul class="">
+  <li *ngFor="let cart of carts | slice:1" class="">
+    <div class="padding">
+     <h3>
+       {{cart.name}}  <div class="single-ninja2"> {{cart.price}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{cart.quantity}} </div>
+     </h3>
+    </div>
+  </li>
+
+</ul> 
+<h4><div style="float:right">{{discount2}}</div><br></h4>
+<h4><div style="float:right">{{totalbill}}</div></h4>
+
+
+
+
+
+
+
+       
+

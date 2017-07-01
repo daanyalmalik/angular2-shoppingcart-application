@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+imd
+{
+ padding-top: --10px;
+ background-position-x: 10px; 
+}
+
+.mainbody
+{
+
+  padding-top: 50px;
+}
+.btn2{
+  
+  background-color: lightblue;
+}
+body{
+  font-family: verdana;
+  letter-spacing: 0.1em;
+  color: #606060;
+  background: #eee;
+  padding: 20px;
+  width:1000px; margin:0 auto;
+}
+
+#ninja-listing li{
+  padding: 16px 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+.items-ul { display: table-cell; width: 600px; font-size:0;  margin:0 auto; width:1000px;} 
+.items-li {  display: inline-table; width: 33%; font-size:15px; padding: 20px;}
+
+.items-li2 {  display:flex; width: 33%; font-size:15px; padding: 20px;}
+
+.textbox
+{
+
+color: #ccc;
+color: black;
+width: 150px;
+padding: 6px 15px 6px 35px;
+border-radius: 20px;
+box-shadow: 0 1px 0 #ccc inset;
+transition:500ms all ease;
+}
+
+.list
+{
+  display: inline;
+}
+.text {
+    
+    width: 180px;
+    height: 40px;
+    display: inline;
+}
+
+.textpos1
+{
+    position:absolute;
+    transition: .5s ease;
+    left: 20px;
+    top: 200px;
+}
+
+.textpos2
+{
+    position:absolute;
+    transition: .5s ease;
+    left: 200px;
+    top: 200px;
+}
+
+
+.cartpos
+{
+    position:absolute;
+    transition: .5s ease;
+    left: 1100px;
+    top: 147px;
+}
+
+.single-ninja{
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 8px !important;
+}
+
+.single-ninja2{
+  float: right;
+  margin-right: 10px;
+  line-height: 20px;
+  font-family: verdana;
+ 
+}
+
+.padding{
+
+  padding-top: 10px;
+  background-color: lightgray;
+   font-family: verdana;
+}
